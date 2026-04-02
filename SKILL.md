@@ -4,6 +4,17 @@
 
 Helps create and improve Makefiles that serve as executable documentation and discoverable interfaces to project workflows. Focuses on maintainability, safety, and usability over technical sophistication.
 
+## When to Apply This Skill
+
+Use makefile-sage expertise when:
+- User asks about Makefiles directly
+- User mentions project workflow discoverability  
+- User shows a Makefile and asks for help
+
+Be careful when:
+- User is in the middle of deployments or builds
+- User is working with other build systems
+
 ## Capabilities
 
 ### analyze
