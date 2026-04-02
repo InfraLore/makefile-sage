@@ -70,3 +70,6 @@ Now `make` (or `make help`) shows exactly what's available, and each target is s
 We treat Makefiles as **clear, discoverable interfaces** to project workflows. The goal is maintainable, readable code that people can quickly understand and trust - not the most technically sophisticated implementation.
 
 See [PRINCIPLES.md](PRINCIPLES.md) for the complete design philosophy.
+
+## Licesne
+BSD-0

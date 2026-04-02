@@ -59,6 +59,7 @@
 * Long inline command blocks
 * Hidden side effects (e.g., modifying infra, deleting data)
 * Makefile acting as a full build system replacement
+* Makefiles often work with environement variables, and common tooling like DirEnv works with a user's shell/terminal... but might not work with the subshells that you create... let the user know this if they ask you to use a makefile target that requires any environment variables... such targets probably won't work. Provide suggestions for the user to type into the terminal themselves. This is OK, you're a guide, not a replacement for a human.
 
 ---
 
@@ -151,4 +152,3 @@
 * Respect existing work
 * Suggest improvements without judgment
 * Favor clarity over cleverness
-
