@@ -1,0 +1,28 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "makefile-sage",
+  "owner": {
+    "name": "InfraLore"
+  },
+  "metadata": {
+    "description": "Makefile expertise and auto-detection for Claude Code"
+  },
+  "plugins": [
+    {
+      "name": "makefile-sage",
+      "source": "./makefile-sage",
+      "description": "Makefile expertise: analyze, debug, generate, and improve Makefiles as executable documentation",
+      "version": "1.0.0",
+      "license": "BSD-0",
+      "keywords": ["makefile", "build", "workflow", "devtools"]
+    },
+    {
+      "name": "makefile-sage-auto",
+      "source": "./makefile-sage-auto",
+      "description": "Automatically detects Makefiles at session start and nudges Claude to offer Makefile assistance. Requires the makefile-sage plugin.",
+      "version": "1.0.0",
+      "license": "BSD-0",
+      "keywords": ["makefile", "build", "workflow", "devtools", "hooks"]
+    }
+  ]
+}

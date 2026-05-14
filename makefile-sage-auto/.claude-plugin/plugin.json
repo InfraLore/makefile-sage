@@ -1,0 +1,8 @@
+{
+  "name": "makefile-sage-auto",
+  "description": "Automatically detects Makefiles and activates makefile-sage expertise",
+  "version": "1.0.0",
+  "author": {
+    "name": "Hardy Pottinger"
+  }
+}

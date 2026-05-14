@@ -1,0 +1,13 @@
+{
+  "name": "makefile-sage",
+  "version": "1.0.0",
+  "description": "Makefile expertise: analyze, debug, generate, and improve Makefiles as executable documentation",
+  "author": {
+    "name": "InfraLore",
+    "url": "https://github.com/InfraLore/makefile-sage"
+  },
+  "homepage": "https://github.com/InfraLore/makefile-sage",
+  "repository": "https://github.com/InfraLore/makefile-sage",
+  "license": "BSD-0",
+  "keywords": ["makefile", "build", "workflow", "devtools"]
+}
