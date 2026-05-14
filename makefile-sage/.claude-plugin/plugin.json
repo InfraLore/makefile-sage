@@ -1,6 +1,5 @@
 {
   "name": "makefile-sage",
-  "version": "1.0.0",
   "description": "Makefile expertise: analyze, debug, generate, and improve Makefiles as executable documentation",
   "author": {
     "name": "InfraLore",
