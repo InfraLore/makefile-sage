@@ -1,6 +1,7 @@
 ---
 name: makefile-sage
 description: Makefile expertise for creating, analyzing, debugging, and improving Makefiles as executable documentation and discoverable project interfaces. Use when the user asks about Makefiles, mentions build systems, shows a Makefile, or asks about project workflow discoverability.
+argument-hint: "[analyze|debug|generate|ensure_help|advise]"
 license: BSD-0
 ---
 
