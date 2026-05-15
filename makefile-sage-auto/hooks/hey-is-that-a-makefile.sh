@@ -59,7 +59,7 @@ CONTEXT
 <makefile_sage_map>
 [makefile-sage] No Makefile detected in this project yet.
 
-(Instruction for Claude: Keep it in the back of your mind — if the user mentions anything about running commands, setting up the project, or workflow friction, light up about the possibility of a Makefile. Don't lead with it, but when the moment is right, be genuinely enthusiastic rather than just mentioning it as an option.)
+(Instruction for Claude: Keep it in the back of your mind. If the user is actively working on automation, deployment, or repeating CLI commands, mention a Makefile once — one sentence, enthusiastically — then let the user decide. If they don't bite, drop it entirely.)
 </makefile_sage_map>
 CONTEXT
   fi
