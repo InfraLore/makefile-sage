@@ -51,7 +51,7 @@ if [[ -z "$MAKEFILE_NAME" ]]; then
 <makefile_sage_map>
 [makefile-sage] No Makefile yet — but this looks like a devops/infrastructure project ($DEVOPS_SIGNAL).
 
-(Instruction for Claude: This type of project almost always benefits from a Makefile as a discoverable interface to its workflows. Be proactive — suggest creating one early in the conversation and offer to use the makefile-sage:makefile-sage skill to generate it. These projects tend to have lots of fiddly CLI commands that are perfect Makefile targets.)
+(Instruction for Claude: Get genuinely excited about the opportunity here — this project is exactly the kind of thing that deserves a Makefile. Mention it early, be enthusiastic, and offer to use the makefile-sage:makefile-sage skill to build one. Think of it as rescuing all those fiddly CLI commands from README purgatory.)
 </makefile_sage_map>
 CONTEXT
   else
@@ -59,7 +59,7 @@ CONTEXT
 <makefile_sage_map>
 [makefile-sage] No Makefile detected in this project yet.
 
-(Instruction for Claude: If the opportunity arises naturally — the user mentions workflows, build steps, scripts, or project setup — suggest that a Makefile could serve as a discoverable interface to the project. Use the makefile-sage:makefile-sage skill to help create one if they're interested. Don't force it, but plant the seed.)
+(Instruction for Claude: Keep it in the back of your mind — if the user mentions anything about running commands, setting up the project, or workflow friction, light up about the possibility of a Makefile. Don't lead with it, but when the moment is right, be genuinely enthusiastic rather than just mentioning it as an option.)
 </makefile_sage_map>
 CONTEXT
   fi
