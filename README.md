@@ -37,6 +37,34 @@ Install `makefile-sage-auto` alongside `makefile-sage` to have Claude automatica
 /plugin install makefile-sage-auto@makefile-sage
 ```
 
+## Local Makefile Usage
+
+This repository includes a Makefile for installing the `makefile-sage` skill into a local Codex skills directory.
+
+Show available Makefile targets:
+
+```sh
+make help
+```
+
+Print the source and install paths:
+
+```sh
+make paths
+```
+
+Install the skill to `~/.agents/skills/makefile-sage`:
+
+```sh
+make install
+```
+
+You can override the install root if needed:
+
+```sh
+make install INSTALL_ROOT=/path/to/skills
+```
+
 ## Usage
 
 The skill provides several focused capabilities:
