@@ -104,6 +104,10 @@ We treat Makefiles as **clear, discoverable interfaces** to project workflows. T
 
 See [makefile-sage/skills/makefile-sage/PRINCIPLES.md](makefile-sage/skills/makefile-sage/PRINCIPLES.md) for the complete design philosophy.
 
+## Acknowledgements
+
+Several structural and UX patterns in this plugin were inspired by [learning-opportunities](https://github.com/DrCatHicks/learning-opportunities) by [Dr. Cat Hicks](https://drcathicks.com) -- including escape hatch language, honest feedback guidelines, Codex plugin support, and the overall plugin structure. Highly recommended if you want to build genuine expertise while using AI coding tools.
+
 ## License
 
 BSD-0
