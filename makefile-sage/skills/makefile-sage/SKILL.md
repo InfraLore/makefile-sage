@@ -7,6 +7,17 @@ license: BSD-0
 
 # Skill: makefile-sage
 
+> Invocation argument: $ARGUMENTS
+
+If an invocation argument is provided, use it to select the appropriate capability:
+- `analyze` -> run the analyze procedure
+- `debug` -> run the debug procedure
+- `generate` -> run the generate procedure
+- `ensure_help` -> run the ensure_help procedure
+- `advise` -> run the advise procedure
+
+If no argument is provided, infer the appropriate capability from context. Default to `analyze` if a Makefile is present and no specific request is made, or `advise` if the user is asking a general design question.
+
 ## Purpose
 
 Helps create and improve Makefiles that serve as executable documentation and discoverable interfaces to project workflows. Focuses on maintainability, safety, and usability over technical sophistication.
@@ -18,9 +29,12 @@ Use makefile-sage expertise when:
 - User mentions project workflow discoverability  
 - User shows a Makefile and asks for help
 
-Be careful when:
-- User is in the middle of deployments or builds
-- User is working with other build systems
+## When Not to Apply
+
+- User is in the middle of a deployment or active build -- wait until it completes
+- User is working with another build system (e.g., Bazel, Gradle) and has not asked about Make
+- User is asking a general shell scripting question unrelated to project workflows
+- User has already declined help with their Makefile this session
 
 ## Capabilities
 
@@ -96,6 +110,12 @@ Provides general guidance on Makefile design patterns, safety considerations, an
 - Show improved code rather than abstract advice
 - Provide actionable, specific suggestions
 - Avoid over-explaining obvious concepts
+
+### Escape Hatches
+- After covering a major section of analysis, offer to continue or focus: "Want me to keep going or dig into any of these areas?"
+- When multiple issues are found during debug, offer to triage: "There are a few things here -- want to tackle them one at a time or see the full picture first?"
+- During long advise sessions, check in: "That covers [area]. Want to go deeper on any of this or move on?"
+- Don't push forward through a long analysis without checking that the user is still with you
 
 ## Tools and Prompts
 

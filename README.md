@@ -1,6 +1,6 @@
 # Makefile Sage
 
-A Claude Code plugin that helps create and improve Makefiles as executable documentation and discoverable interfaces to project workflows.
+A Claude Code and Codex plugin that helps create and improve Makefiles as executable documentation and discoverable interfaces to project workflows.
 
 ## Why It Exists
 
@@ -12,6 +12,8 @@ Most project documentation becomes stale over time. Makefiles, when done well, p
 - **Practical**: Focused on real workflows, not theoretical perfection
 
 ## Installation
+
+### Claude Code
 
 This repository is a Claude Code plugin marketplace. To install:
 
@@ -29,9 +31,23 @@ Install the plugin:
 
 Restart Claude Code to activate.
 
-### Automatic Makefile Detection (Optional)
+### Codex
 
-Install `makefile-sage-auto` alongside `makefile-sage` to have Claude automatically notice when you open a project that contains a Makefile and offer build system assistance:
+This repository is also a Codex plugin marketplace. To add it from GitHub:
+
+```
+codex plugin marketplace add https://github.com/InfraLore/makefile-sage.git
+```
+
+For local development from a checkout:
+
+```
+codex plugin marketplace add /path/to/makefile-sage
+```
+
+### Automatic Makefile Detection (Optional, Claude Code only)
+
+Install `makefile-sage-auto` alongside `makefile-sage` to have Claude automatically notice when you open a project that contains a Makefile and offer build system assistance. This companion plugin uses a `SessionStart` hook and is currently Claude Code only.
 
 ```
 /plugin install makefile-sage-auto@makefile-sage
@@ -39,15 +55,15 @@ Install `makefile-sage-auto` alongside `makefile-sage` to have Claude automatica
 
 ## Usage
 
-The skill provides several focused capabilities:
+```
+/makefile-sage analyze      # Analyze an existing Makefile
+/makefile-sage debug        # Debug Makefile issues
+/makefile-sage generate     # Generate a new Makefile from scratch
+/makefile-sage ensure_help  # Add or improve the help target
+/makefile-sage advise       # Get general advice about Makefile design
+```
 
-```
-/makefile-sage:makefile-sage analyze      # Analyze an existing Makefile
-/makefile-sage:makefile-sage debug        # Debug Makefile issues
-/makefile-sage:makefile-sage generate     # Generate a new Makefile from scratch
-/makefile-sage:makefile-sage ensure_help  # Add or improve the help target
-/makefile-sage:makefile-sage advise       # Get general advice about Makefile design
-```
+You can also invoke the skill without an argument and it will infer the right mode from context.
 
 ## Quick Examples
 
